@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*--------------- Navbar ------------ */
+.navbar {
+  width: 100%;
+  background-color: #032541;
+}
+.nav-item a {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.nav-item a:hover {
+  color: #1bb8d8;
+}
+#home a {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* ------------Header------------  */
+.heading > h1 {
+  color: rgb(0, 255, 255);
+}
+
+.header {
+  height: 350px;
+  /* background-color: #03254126; */
+}
+.dropdown-menu > li > a {
+  color: grey;
+}
+
+.home__textstyle {
+  text-decoration: none;
+}
+.header__img {
+  width: 100%;
+  height: 70vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  animation: animate 15s infinite;
+  background-size: cover;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(/images/header1-img.jpg);
+  }
+
+  25% {
+    background-image: url(/images/header2-img.jpg);
+  }
+
+  50% {
+    background-image: url(/images/header3-img.jpg);
+  }
+
+  75% {
+    background-image: url(/images/header4-img.jpg);
+  }
+}
+
+.box {
+  padding-top: 150px;
+  /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)); */
+}
+.box h1 {
+  color: white;
+  text-shadow: 0px 1px 2px #032541;
+}
+
+ /* --------------Movies List ----------- */
+.outer {
+  /* white-space: nowrap; */
+  overflow-x: auto;
+}
+.outer::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* -------------Card ------------ */
+.card {
+  height: 420px;
+  transition: 0.25s linear all;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.popular-card {
+  width: 220px;
+  height: 330px;
+  float: left;
+  overflow: hidden;
+  transition: 0.4s linear;
+  position: relative;
+}
+.card__all > img {
+  transition: 0.25s linear all;
+  cursor: pointer;
+}
+.card__all > img:hover {
+  transform: scale(1.1);
+}
+
+.cardall__hover {
+  width: 220px;
+  height: 350px;
+  background-color: #032541b6;
+  transition: 0.4s linear;
+  position: relative;
+  opacity: 0;
+  top: -100px;
+  overflow: hidden;
+}
+.cardall__hover:hover {
+  transform: translateY(-2vmax);
+  opacity: 1;
+}
+/* -------------Movies Details------------  */
+
+.backposter__path {
+  width: 100%;
+  height: 80vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/header2-img.jpg);
+}
+.poster__path {
+  width: 22%;
+  height: 50vh;
+  z-index: +20;
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  box-shadow: 0 0 5px white;
+  border-radius: 10px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/header2-img.jpg);
+}
+.movies__text {
+  width: 30%;
+  height: 50vh;
+  color: white;
+  transform: translate(0px, -260px);
+}
