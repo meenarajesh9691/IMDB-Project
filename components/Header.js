@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import { nowContext } from "@/context/Contextnow";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 
 const Header = () => {
   const [now, setNow] = useContext(nowContext);
@@ -30,26 +28,6 @@ const Header = () => {
             </button>
           </form>
         </div>
-        {/* <Carousel
-          showThumbs={false}
-          autoplay={true}
-          transitionTime={1}
-          infiniteLoop={true}
-          showStatus={false}
-        >
-          {now.map((m) => (
-            <img
-              key={m.id}
-              height={350}
-              src={`https://image.tmdb.org/t/p/w500/${m.backdrop_path}`}
-            />
-          ))}
-        </Carousel> */}
-  
-
-
-
-
       </div>
     </>
   );
