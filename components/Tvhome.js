@@ -23,14 +23,17 @@ const Tvhome = () => {
 
   return (
     <>
-      <h2 className="container alert alert-secondary w-25 mt-5 text-center">
+      <h2 className="container  alert alert-secondary w-25 mt-5 text-center">
         TvShow List
       </h2>
-      <div className="container outer   d-flex mt-5">
+      <div className="container outer p-5  d-flex mt-5">
         {airshow &&
           airshow.map((m) => (
-            <Link href={`TvShow/TvPopular/${m.id}`} className="home__textstyle">
-              <div key={m.id}>
+            <div key={m.id}>
+              <Link
+                href={`TvShow/TvPopular/${m.id}`}
+                className="home__textstyle"
+              >
                 <div className="card m-2 shadow p-3 mb-5 bg-body-tertiary rounded">
                   <img
                     height={250}
@@ -41,8 +44,8 @@ const Tvhome = () => {
                     {m.first_air_date}
                   </h4>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
       </div>
     </>

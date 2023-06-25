@@ -10,8 +10,8 @@ const index = () => {
     
       <Navbar />
       <Header />
-      <Home />
-      <Tvhome />
+      <Home/>
+      <Tvhome/>
     </>
   );
 };

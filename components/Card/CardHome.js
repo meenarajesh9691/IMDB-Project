@@ -10,7 +10,7 @@ const CardHome = () => {
       <h2 className="container alert alert-secondary w-25 mt-5 text-center">
         Movies List
       </h2>
-      <div className="container outer   d-flex mt-5">
+      <div className="container outer p-5  d-flex mt-5">
         {now &&
           now.map((m) => (
             <div key={m.id}>

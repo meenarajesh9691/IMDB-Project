@@ -11,7 +11,7 @@ const CardUpcoming = () => {
     <>
       <div className="container  me-4 mt-5">
         {upcoming.map((m) => (
-          <Link href={`popular/${m.id}`}>
+          <Link href={`Upcoming/${m.id}`}>
             <div className="popular-card  m-2 shadow  mb-2 bg-body-tertiary rounded">
               <div key={m.id} className="card__all">
                 <img

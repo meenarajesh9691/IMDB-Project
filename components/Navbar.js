@@ -4,13 +4,13 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-dark ">
+      <nav className="navbar navbar-expand-lg navbar-light ">
         <div className="container">
           <Link className="navbar-brand" href={"/"}>
             <img src="/images/tmdb-logo.png" alt="" width={200} />
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler text-secondary"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -18,21 +18,27 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar_toggler_icon fs-1 ">
+              <i className="ri-menu-line"></i>
+            </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
-              <li className="nav-item dropdown white">
+              <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle text-white "
-                  href={"/movies/id"}
+                  className="nav-link dropdown-toggle text-white"
+                  href="/Movies"
+                  id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Movies
                 </Link>
-                <ul className="dropdown-menu">
+                <ul
+                  className="dropdown-menu "
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
                   <li>
                     <Link className="dropdown-item" href="/Movies/popular">
                       Popular
@@ -54,26 +60,31 @@ const Navbar = () => {
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle text-white"
-                  href={"/TvShows/id"}
+                  href={"/"}
+                  id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  TvShow
+                  Tv Show
                 </Link>
-                <ul className="dropdown-menu">
+
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
                   <li>
                     <Link className="dropdown-item" href="/TvShow/TvPopular">
-                      Popular
+                     TvPopular
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="/tvShow/AiringToday">
+                    <Link className="dropdown-item" href="/TvShow/AiringToday">
                       Airing Today
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="">
+                    <Link className="dropdown-item" href="TvShow/OnTv">
                       On Tv
                     </Link>
                   </li>

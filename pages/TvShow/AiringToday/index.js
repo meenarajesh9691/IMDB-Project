@@ -4,7 +4,7 @@ import Tvhome from "@/components/Tvhome";
 const index = () => {
   return (
     <>
-      <Tvhome />
+      <h1>AiringToday Index Route</h1>
     </>
   );
 };

@@ -4,7 +4,7 @@ export const topratingContext = createContext(null);
 const Contexttoprating = (props) => {
   const [toprating, setToprating] = useState([]);
 
-  console.log(toprating);
+  // console.log(toprating);
 
   return (
     <>

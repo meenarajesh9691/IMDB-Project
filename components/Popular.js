@@ -5,6 +5,8 @@ import { popularContext } from "../context/Context";
 import axios from "axios";
 import Link from "next/link";
 import CardPopular from "./Card/CardPopular";
+
+
 const Popular = () => {
   const [movies, setMovies] = useContext(popularContext);
   // console.log(movies);
